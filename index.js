@@ -3,10 +3,10 @@ const cors = require("cors");
 const connection = require("./config/db");
 const userRouter = require("./routes/user.routes");
 const employeeRouter = require("./routes/employee.routes");
-
+require("dotenv").config();
 const app = express();
 
-const port = 8080;
+const port = 8050;
 
 app.use(express.json());
 app.use(cors());
